@@ -1,0 +1,481 @@
+<app-header></app-header>
+
+<body class="defult-home">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .rs-degree.style1 .degree-wrap:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background: linear-gradient(transparent, #fff);
+        }
+    </style>
+    <!-- Intro Courses -->
+    <section class="intro-section gray-bg pt-10 md-pt-64 md-pb-70">
+        <div class="container">
+            <div class="row clearfix">
+                <!-- Content Column -->
+                <div class="col-lg-12 md-mb-50">
+                    <!-- Intro Info Tabs-->
+                    <div class="intro-info-tabs">
+                        <!-- <ul class="nav nav-tabs intro-tabs tabs-box" id="myTab" role="tablist">
+                            <li class="nav-item tab-btns" role="presentation">
+                                <a class="nav-link tab-btn active" id="Chemistry" data-bs-toggle="tab" href="#"
+                                    data-bs-target="#prod-overview" role="tab" aria-controls="prod-overview"
+                                    aria-selected="true">2021-22</a>
+                            </li>
+                        </ul> -->
+                        <div class="tab-content tabs-content" id="myTabContent">
+                            <div class="tab-pane tab fade show active" id="prod-overview" role="tabpanel"
+                                aria-labelledby="Chemistry">
+                                <div class="content white-bg pt-30">
+                                    <!-- Cource Overview -->
+                                    <div class="course-overview">
+                                        <div class="inner-box ">
+
+                                            <div class="rs-degree style1 modify  pt-60 pb-70 md-pt-70 md-pb-40">
+                                                <!-- <div id="rs-team" class="rs-team style1 orange-color white-bg">
+                                                    <div class="container">
+                                                        <h2>University Toppers</h2>
+                                                        <h5>M.COM</h5>
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/1.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">Dr. Jatin Patel</a>
+                                                                        </h4>
+                                                                        <span class="designation">Principal</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Contact No : 9825355242</li>
+                                                                            <li>Email ID : principal@sanppgi.ac.in</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/2.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Rajesh Patel</a></h4>
+                                                                        <span class="designation">Associate Professor
+                                                                            And Head</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Email ID : dr.rjpatel31@yahoo.in</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/3.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Amitkumar Dholakia</a></h4>
+                                                                        <span class="designation">Associate
+                                                                            Professor</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Email ID : dholkia_amit@yahoo.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/4.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Vishant Patel</a></h4>
+                                                                        <span class="designation">Associate
+                                                                            Professor</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Email ID : vish.ckpatel@gmail.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/5.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Darshan Patel</a></h4>
+                                                                        <span class="designation">Associate
+                                                                            Professor</span>
+                                                                        <ul class="social-links">
+
+                                                                            <li>Email ID : darshanswami@gmail.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/6.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Zarna Patel</a></h4>
+                                                                        <span class="designation">Associate
+                                                                            Professor</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Email ID : zarnapatel211@yahoo.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-sm-6 mb-30">
+                                                                <div class="team-item">
+                                                                    <img src="assets/images/team/7.jpg" alt="">
+                                                                    <div class="content-part">
+                                                                        <h4 class="name"><a href="#">
+                                                                                Dr. Jemin Avlani</a></h4>
+                                                                        <span class="designation">Associate
+                                                                            Professor</span>
+                                                                        <ul class="social-links">
+                                                                            <li>Email ID : jemin.avalani@gmail.com</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-lg-12 col-md-12 mb-30">
+                                                    <div class="degree-wrap" style="overflow-x:auto;">
+                                                        <h2>Result:</h2>
+                                                        <table>
+                                                            <tr>
+                                                                <th>Year</th>
+                                                                <th>First with Distinction</th>
+                                                                <th>First Class</th>
+                                                                <th>Second Class</th>
+                                                                <th>Total</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2000-01</td>
+                                                                <td>18</td>
+                                                                <td>31</td>
+                                                                <td>11</td>
+                                                                <td>60</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2001-02</td>
+                                                                <td>34</td>
+                                                                <td>24</td>
+                                                                <td>01</td>
+                                                                <td>59 (1 Drop)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2002-03</td>
+                                                                <td>47</td>
+                                                                <td>12</td>
+                                                                <td>01</td>
+                                                                <td>60</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2003-04</td>
+                                                                <td>26</td>
+                                                                <td>63</td>
+                                                                <td>11</td>
+                                                                <td>100</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2004-05
+                                                                </td>
+                                                                <td>
+                                                                    60
+                                                                </td>
+                                                                <td>
+                                                                    38
+                                                                </td>
+                                                                <td>
+                                                                    02
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2005-06
+                                                                </td>
+                                                                <td>
+                                                                    63
+                                                                </td>
+                                                                <td>
+                                                                    24
+                                                                </td>
+                                                                <td>
+                                                                    11
+                                                                </td>
+                                                                <td>
+                                                                    98
+                                                                    (2 Drop)
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2006-07
+                                                                </td>
+                                                                <td>
+                                                                    51
+                                                                </td>
+                                                                <td>
+                                                                    44
+                                                                </td>
+                                                                <td>
+                                                                    05
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2007-08
+                                                                </td>
+                                                                <td>
+                                                                    60
+                                                                </td>
+                                                                <td>
+                                                                    37
+                                                                </td>
+                                                                <td>
+                                                                    03
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2008-09
+                                                                </td>
+                                                                <td>
+                                                                    50
+                                                                </td>
+                                                                <td>
+                                                                    46
+                                                                </td>
+                                                                <td>
+                                                                    04
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2009-10
+                                                                </td>
+                                                                <td>
+                                                                    58
+                                                                </td>
+                                                                <td>
+                                                                    32
+                                                                </td>
+                                                                <td>
+                                                                    07
+                                                                </td>
+                                                                <td>
+                                                                    97
+                                                                    (3 Left)
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2010-11
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2011-12
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2012-13
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2013-14
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    -
+                                                                </td>
+                                                                <td>
+                                                                    100
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr>
+                                                        <table>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>O
+                                                                    Grade</th>
+                                                                <th>A
+
+                                                                    Grade</th>
+                                                                <th>B Grade</th>
+                                                                <th>C Grade</th>
+                                                                <th>NC</th>
+                                                                <th>Total</th>
+                                                            </tr>
+                                                            <tr>
+                                                           <td>2014-15 </td>
+                                                            <td>
+                                                                28
+                                                            </td>
+                                                            <td>
+                                                                57
+                                                            </td>
+                                                            <td>
+                                                                12
+                                                            </td>
+                                                            <td>
+                                                                01
+                                                            </td>
+                                                            <td>
+                                                                ---
+                                                            </td>
+                                                            <td>
+                                                                97
+                                                            </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 2016-17 (Fourth Semester)
+                                                                </td>
+                                                                <td>
+                                                                    26
+                                                                </td>
+                                                                <td>
+                                                                    22
+                                                                </td>
+                                                                <td>
+                                                                    ---
+                                                                </td>
+                                                                <td>
+                                                                    ---
+                                                                </td>
+                                                                <td>
+                                                                    ---
+                                                                </td>
+                                                                <td>
+                                                                    48
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    2017-18
+                                                                    (Fourth Semester)
+
+
+                                                                </td>
+                                                                <td>
+                                                                    21
+                                                                </td>
+                                                                <td>
+                                                                    47
+                                                                </td>
+                                                                <td>
+                                                                    6
+                                                                </td>
+                                                                <td>
+                                                                    ---
+                                                                </td>
+                                                                <td>
+                                                                    2
+                                                                </td>
+                                                                <td>
+                                                                    76
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="7" style="text-align: center;"> <b> (2014-15 One Student stood first in the entire S.P.University)</b></td>
+                                                            </tr>
+                                                        </table>
+
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End intro Courses -->
+
+</body>
+<app-footer></app-footer>
