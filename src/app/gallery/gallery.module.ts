@@ -5,17 +5,22 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { GalleryRoutes } from './gallery.routing';
 import { HomeModule } from '../home/home.module';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BalmitraComponent } from './balmitra/balmitra.component';
 
 
 
 @NgModule({
   declarations: [
-    PhotosComponent
+    PhotosComponent,
+    BalmitraComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     HomeModule,
+    RouterModule.forChild(GalleryRoutes),
+    NgxPaginationModule,
     RouterModule.forChild(GalleryRoutes)
   ]
 })

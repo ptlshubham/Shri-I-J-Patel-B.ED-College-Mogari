@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 
 export const AppRoutes: Routes = [
@@ -7,14 +8,8 @@ export const AppRoutes: Routes = [
         redirectTo: '/home',
         pathMatch: 'full',
     },
-    {
-        path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-    },
-    {
-        path: 'basic',
-        loadChildren: () => import('./basic/basic.module').then(m => m.BasicModule)
-    },
+    { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+    { path: 'basic', loadChildren: () => import('./basic/basic.module').then(m => m.BasicModule) },
     {
         path: 'department',
         loadChildren: () => import('./department/department.module').then(m => m.DepartmentModule)
@@ -34,3 +29,10 @@ export const AppRoutes: Routes = [
 
 
 ];
+// Use For Page start at top it is compolosary
+
+@NgModule({
+    imports: [RouterModule.forRoot(AppRoutes, { scrollPositionRestoration: 'top', relativeLinkResolution: 'legacy' })],
+    exports: [RouterModule]
+})
+export class AppRoutingModule { }

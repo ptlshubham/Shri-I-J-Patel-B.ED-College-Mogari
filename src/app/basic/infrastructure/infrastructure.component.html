@@ -1,79 +1,53 @@
 <app-header></app-header>
+<div class="content white-bg pt-30 md-pt-64">
+    <div class="course-overview">
+        <div class="inner-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-content">
+                        <style>
+                            .rs-about.style1 .notice-bord.style1 {
+                                margin-top: 0px;
+                            }
+                        </style>
+                        <div class="rs-faq-part rs-about style1">
+                            <div class="container">
+                                <div class="main-part">
 
-<body class="defult-home">
-    <!-- Intro Courses -->
-    <section class="intro-section gray-bg pt-50 pb-50 md-pt-64 md-pb-70">
-        <div class="container">
-            <div class="row clearfix">
-                <!-- Content Column -->
-                <div class="col-lg-12 md-mb-50">
-                    <!-- Intro Info Tabs-->
-                    <div class="intro-info-tabs">
-                        <div class="tab-content tabs-content" id="myTabContent">
-                            <div class="tab-pane tab fade show active" id="prod-overview" role="tabpanel"
-                                aria-labelledby="photo">
-                                <div class="content white-bg pt-30">
-                                    <!-- Cource Overview -->
-                                    <div class="course-overview">
-                                        <div class="inner-box ">
-                                            <div class="row">
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/1.jpg"><img
-                                                                src="assets/images/infrastructure/1.jpg" alt=""></a>
+                                    <div class="faq-content" >
+                                        <div class="accordion pt-30" id="accordionExample">
+                                            <h4 class="pb-30" style="text-align: center;"> INFRASTRUCTURE AND FACILITIES</h4>
+
+                                            <h4 style="color: red;text-align: center;" *ngIf="infraData.length==0">Data
+                                                Not Found !</h4>
+                                            <div class="row" *ngIf="infraData.length>0">
+                                                <div class="col-sm-6 mb-3" *ngFor="let r of infraData;let i=index">
+                                                    <div class="accordion-item card">
+                                                        <div class="accordion-header card-header" id="headingThree"
+                                                            (click)="open(i)">
+                                                            <button class="card-link accordion-button collapsed"
+                                                                type="button" data-bs-target="#collapseTen"
+                                                                aria-expanded="false" aria-controls="collapseTen"
+                                                                style="background-color: #521415; color: white !important;">{{r.infraTitle}}</button>
+                                                        </div>
+                                                        <div id="collapseTen" class="accordion-collapse " *ngIf="r.cols"
+                                                            (click)="open(i)" aria-labelledby="headingThree"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body card-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12"
+                                                                        *ngIf="r.infraImage!='undefined'">
+                                                                        <img src="http://localhost:9000{{r.infraImage}}"
+                                                                            alt="infra">
+                                                                    </div>
+                                                                    <div class="col-lg-12 mt-1">
+                                                                        <div [innerHTML]="r.infraDetails"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/2.jpg"><img
-                                                                src="assets/images/infrastructure/2.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/3.jpg"><img
-                                                                src="assets/images/infrastructure/3.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/4.jpg"><img
-                                                                src="assets/images/infrastructure/4.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/5.jpg"><img
-                                                                src="assets/images/infrastructure/5.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/6.jpg"><img
-                                                                src="assets/images/infrastructure/6.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/7.jpg"><img
-                                                                src="assets/images/infrastructure/7.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 mb-30 col-md-6">
-                                                    <div class="gallery-img">
-                                                        <a class="image-popup"
-                                                            href="assets/images/infrastructure/8.jpg"><img
-                                                                src="assets/images/infrastructure/8.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                
                                             </div>
                                         </div>
                                     </div>
@@ -84,9 +58,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End intro Courses -->
+    </div>
+</div>
 
-</body>
+
 
 <app-footer></app-footer>
