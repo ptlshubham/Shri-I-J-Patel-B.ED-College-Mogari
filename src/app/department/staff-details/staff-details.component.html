@@ -3,7 +3,7 @@
 <div id="rs-team" class="rs-team style1 orange-color pt-40 pb-100 md-pt-64 md-pb-70 white-bg">
     <div class="container">
         <h3 style="text-align: center;">Staff List</h3>
-        <div class="row">
+        <div class="row mb-4">
             <div class="col text-end">
                 <label for="drop">Select Department</label><br>
                 <div ngbDropdown class="d-inline-block">
@@ -17,7 +17,6 @@
                             <button ngbDropdownItem on-click="selectDepartment(y.department)">{{y.department}}</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -41,7 +40,8 @@
                                         href="https://api.cesociety.in{{s.researchPaper}}" target="_blank"
                                         class="text-white">Read More <i class="fa fa-arrow-right"
                                             aria-hidden="true"></i>
-                                    </a></u></li>
+                                    </a></u>
+                            </li>
                         </ul>
                     </div>
                 </div>
